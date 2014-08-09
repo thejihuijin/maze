@@ -1,13 +1,15 @@
 var numrocks=0
 function showRock(src,id) {
+    id += numrocks
+    numrocks++;
     var position = 0;
     var background= document.getElementById('background');
     var maxDist = parseInt(background.style.height) - 100;
     var img = document.createElement("img");
     img.src = src;
-    img.id = id;
+    img.id = id; 
     img.style.position= 'absolute'; 
-    img.style.left = '0px';
+    img.style.left = Math.floor((Math.random() * 3))*100 + 'px';
     img.style.top = '0px'; 
     img.style.width = '100px';
     // This next line will just add it to the <body> tag
@@ -25,7 +27,4 @@ function showRock(src,id) {
         }
     }
     var fallingobj = setInterval(fall,200);
-
-
-
 }
