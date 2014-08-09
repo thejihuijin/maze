@@ -4,7 +4,8 @@ function init(){
     imgObj = document.getElementById('myImage');
     imgObj.style.position= 'absolute'; 
     imgObj.style.left = '0px';
-    imgObj.style.bottom = '0px'; 
+    imgObj.style.bottom = '0px';
+    showRock('img/mario.png', 'rockimg');
 }
 function moveRight(){
     if (position < 2) {
