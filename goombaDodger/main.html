@@ -1,16 +1,21 @@
 <html>
-<head></head>
+<head>
+    <script type="text/javascript" src='js/move.js'></script>
+    <script type="text/javascript" src='js/fallingRock.js'></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
 
 <body>
-this is stupid<br>
 <div id='background' style='background-color:#00FFFF;width:300px;height:500px;position:relative'>
-
-
-<script type="text/javascript" src='js/move.js'></script>
-<script type="text/javascript" src='js/fallingRock.js'>
-</script>
-<img id="myImage" src="img/goomba.jpg" style="width:100px" />
+<img id="myImage" src="img/goomba.png" style="width:120px" />
 </div>
-<button onclick= "showRock('img/mario.jpg','rockimg')">rock!</button>
+<button id = "rock" onclick= "showRock('img/mario.png','rockimg')">Mario Attack!</button>
+
+<script>
+   // $.ready(function() {
+        //$('#rock').click();
+     //   console.log('rocking');
+    //});
+</script>
 </body>
 </html>

@@ -22,9 +22,9 @@ function showRock(src,id) {
             var element = document.getElementById(id);
             element.parentNode.removeChild(element);
         } else {
-            fallingimg.style.top = parseInt(fallingimg.style.top) + 20 + 'px';
-            position += 20;
+            fallingimg.style.top = parseInt(fallingimg.style.top) + 1 + 'px';
+            position += 1;
         }
     }
-    var fallingobj = setInterval(fall,200);
+    var fallingobj = setInterval(fall, 10);
 }
