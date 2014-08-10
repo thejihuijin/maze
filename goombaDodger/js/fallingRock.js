@@ -27,13 +27,16 @@ function showRock(src,id) {
         }
     }
     var fallingobj = setInterval(fall, 10);
-    
+
+
+}
+
+function start(src,id){
     var num = 0;
     window.setInterval(function(){
         
         num = (num+1)%6;
         if(num == 0)
             showRock(src,id);
-    },2000);
+    },1000);
 }
-
