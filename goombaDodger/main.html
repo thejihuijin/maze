@@ -1,13 +1,14 @@
 <html>
 <head>
+    <link rel="stylesheet" href="css/goombaDodger.css">
     <script type="text/javascript" src='js/move.js'></script>
     <script type="text/javascript" src='js/fallingRock.js'></script>
-    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
 <div id='background' style='background-color:#00FFFF;width:300px;height:500px;position:relative'>
-<img id="myImage" src="img/goomba.png" style="width:100px" />
+<img id="goomba" class="moveable" src="img/goomba.png"/>
 </div>
 <button id = "start" onclick= "start('img/mario.png','rockimg')">Mario Attack!</button>
 <button id = "stop" onclick= "stop()">Stop</button>
