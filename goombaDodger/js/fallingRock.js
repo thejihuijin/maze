@@ -1,5 +1,5 @@
 var numrocks=0
-function showRock(src,id) {
+function dropRock(src,id) {
     id += numrocks
     numrocks++;
     var position = 0;
@@ -31,12 +31,23 @@ function showRock(src,id) {
 
 }
 
+var startInterval;
+var falling = false;
 function start(src,id){
-    var num = 0;
-    window.setInterval(function(){
-        
-        num = (num+1)%6;
-        if(num == 0)
-            showRock(src,id);
-    },1000);
+    if (!falling) {
+        falling = true;
+        startInterval = setInterval(function(){
+            dropRock(src,id);
+        },2000);
+    } else {
+        alert("already started numbnut!");
+    }
+}
+function stop() {
+    if (falling) {
+        clearInterval(startInterval);
+        falling = false;
+    } else {
+        alert("haven't started yet numbnut");
+    }
 }

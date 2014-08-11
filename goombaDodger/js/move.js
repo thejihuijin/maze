@@ -5,7 +5,6 @@ function init(){
     imgObj.style.position= 'absolute'; 
     imgObj.style.left = '0px';
     imgObj.style.bottom = '0px';
-    start('img/mario.png', 'rockimg');
 }
 function moveRight(){
     if (position < 2) {
@@ -20,7 +19,7 @@ function moveLeft(){
     }
 }
 
-window.onload =init;
+window.onload = init;
 document.addEventListener('keydown', function(event) {
     var arrow = false;
     switch(event.which) {
