@@ -1,6 +1,19 @@
 #goomba {
     position:absolute; 
     left:0px;
-    bottom:0px;
+    top:0px;
     width:100px;
+}
+#background {
+    background-color:#00FFFF;
+    width:300px;
+    height:500px;
+    position:relative;
+}
+#goombaCage { 
+    background-color:#00AAFF;
+    width:300px;
+    height:100px;
+    position:absolute;
+    bottom:0px;
 }
